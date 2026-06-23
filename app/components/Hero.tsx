@@ -1,7 +1,9 @@
+import StatsCard from "./StatsCard";
+
 export default function Hero() {
   return (
     <section className="bg-slate-950 text-white min-h-[80]">
-      <div className="max-w-7xl mx-auto px-6 py-24">
+      <div className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
         <p className="text-orange-500 font-semibold mb-4">
           PRESIDENTE PRUDENTE E REGIÃO
         </p>
@@ -21,10 +23,12 @@ export default function Hero() {
           <button className="bg-orange-500 px-5 py-3 rounded-md font-semibold">
             Chamar Agora
           </button>
-          
+
           <button className="bg-slate-800 px-5 py-3 rounded-md font-semibold">
             Ver Serviços
           </button>
+
+          <StatsCard />
         </div>
       </div>
     </section>
