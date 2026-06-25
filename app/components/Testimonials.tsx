@@ -34,7 +34,7 @@ export default function Testimonials() {
               <p className="text-orange-500 text-xl mb-4">★★★★★</p>
 
               <p className="text-gray-600 mb-6">
-                "{testimonial.text}"
+                {testimonial.text}
               </p>
 
               <h3 className="text-slate-900 font-bold">
