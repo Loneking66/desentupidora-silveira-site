@@ -11,15 +11,13 @@ const testimonials = [
     name: "Cliente em Presidente Prudente",
     text: "Gostei da transparência no orçamento e da visita sem custo. Recomendo.",
   },
-]
+];
 
 export default function Testimonials() {
   return (
     <section className="bg-gray-100 py-24">
       <div className="max-w-7xl mx-auto px-6">
-        <p className="text-orange-500 font-semibold mb-4">
-          DEPOIMENTOS
-        </p>
+        <p className="text-orange-500 font-semibold mb-4">DEPOIMENTOS</p>
 
         <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-12">
           O QUE NOSSOS CLIENTES DIZEM
@@ -33,17 +31,13 @@ export default function Testimonials() {
             >
               <p className="text-orange-500 text-xl mb-4">★★★★★</p>
 
-              <p className="text-gray-600 mb-6">
-                {testimonial.text}
-              </p>
+              <p className="text-gray-600 mb-6">{testimonial.text}</p>
 
-              <h3 className="text-slate-900 font-bold">
-                {testimonial.name}
-              </h3>
+              <h3 className="text-slate-900 font-bold">{testimonial.name}</h3>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

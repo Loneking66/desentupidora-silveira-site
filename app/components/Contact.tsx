@@ -2,10 +2,7 @@ export default function Contact() {
   return (
     <section className="bg-slate-950 text-white py-24">
       <div className="max-w-7xl mx-auto px-6 text-center">
-
-        <p className="text-orange-500 font-semibold mb-4">
-          ENTRE EM CONTATO
-        </p>
+        <p className="text-orange-500 font-semibold mb-4">ENTRE EM CONTATO</p>
 
         <h2 className="text-5xl font-black mb-6">
           PRECISANDO DE UMA
@@ -13,8 +10,8 @@ export default function Contact() {
         </h2>
 
         <p className="text-gray-300 max-w-2xl mx-auto mb-10">
-          Atendimento rápido em Presidente Prudente e região.
-          Solicite um orçamento sem compromisso pelo WhatsApp.
+          Atendimento rápido em Presidente Prudente e região. Solicite um
+          orçamento sem compromisso pelo WhatsApp.
         </p>
 
         <a
@@ -24,8 +21,7 @@ export default function Contact() {
         >
           Chamar no WhatsApp
         </a>
-
       </div>
     </section>
-  )
+  );
 }

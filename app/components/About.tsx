@@ -1,17 +1,20 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section className="bg-slate-950 text-white py-24">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        <div className="bg-slate-900 border border-slate-800 rounded-lg h-96 flex items-center justify-center">
-          <p className="text-gray-500">
-            Foto da equipe / serviço
-          </p>
+        <div className="relative h-96 rounded-lg overflow-hidden">
+          <Image
+            src="/images/about/team.jpg"
+            alt="Equipe da Desentupidora Silveira trabalhando"
+            fill
+            className="object-cover"
+          />
         </div>
 
         <div>
-          <p className="text-orange-500 font-semibold mb-4">
-            QUEM SOMOS
-          </p>
+          <p className="text-orange-500 font-semibold mb-4">QUEM SOMOS</p>
 
           <h2 className="text-4xl md:text-5xl font-black leading-tight mb-6">
             ATENDIMENTO RÁPIDO, HONESTO E PROFISSIONAL
@@ -33,5 +36,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
