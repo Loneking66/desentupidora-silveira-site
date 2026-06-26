@@ -50,7 +50,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="w-[65%] absolute -bottom-35 left-1/2 -translate-x-1/2">
+          <div className="w-[65%] absolute -bottom-35 left-1/2 -translate-x-1/2">'
             {" "}
             <StatsCard />
           </div>

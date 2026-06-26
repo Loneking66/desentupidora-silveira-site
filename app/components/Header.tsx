@@ -11,27 +11,33 @@ export default function Header() {
         </h1>
 
         <nav className="hidden md:flex items-center gap-8 font-medium">
-          <a
+          <NavLink
             href="#services"
             className="hover:text-orange-500 transition-colors"
           >
             Serviços
-          </a>
-          <a href="#about" className="hover:text-orange-500 transition-colors">
+          </NavLink>
+
+          <NavLink
+            href="#about"
+            className="hover:text-orange-500 transition-colors"
+          >
             Sobre
-          </a>
-          <a
+          </NavLink>
+
+          <NavLink
             href="#testimonials"
             className="hover:text-orange-500 transition-colors"
           >
             Avaliações
-          </a>
-          <a
+          </NavLink>
+
+          <NavLink
             href="#contact"
             className="hover:text-orange-500 transition-colors"
           >
             Contato
-          </a>
+          </NavLink>
         </nav>
 
         <a

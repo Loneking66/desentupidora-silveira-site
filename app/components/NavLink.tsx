@@ -18,7 +18,7 @@ export default function NavLink({
 
     target?.scrollIntoView({
       behavior: "smooth",
-      block: "start",
+      block: "center",
     });
   }
 
