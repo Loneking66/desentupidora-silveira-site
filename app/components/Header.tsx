@@ -1,17 +1,47 @@
+import { Phone } from "lucide-react";
+import NavLink from "./NavLink";
+
 export default function Header() {
   return (
-    <header className="bg-slate-950 text-white">
-      <div className="max-w-7x1 mx-auto px-6 flex items-center justify-between">
-        <h1 className="font-bold text-xl">Silveira</h1>
-        <nav className="hidden md:flex gap-8">
-          <a href="#">Serviços</a>
-          <a href="#">Quem Somos</a>
-          <a href="#">Depoimentos</a>
-          <a href="#">Contato</a>
+    <header className="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 text-white">
+      <div className="max-w-7xl mx-auto h-20 px-6 flex items-center justify-between">
+        <h1 className="text-xl md:text-2xl font-black tracking-wide">
+          <span>DESENTUPIDORA</span>{" "}
+          <span className="text-orange-500">SILVEIRA</span>
+        </h1>
+
+        <nav className="hidden md:flex items-center gap-8 font-medium">
+          <a
+            href="#services"
+            className="hover:text-orange-500 transition-colors"
+          >
+            Serviços
+          </a>
+          <a href="#about" className="hover:text-orange-500 transition-colors">
+            Sobre
+          </a>
+          <a
+            href="#testimonials"
+            className="hover:text-orange-500 transition-colors"
+          >
+            Avaliações
+          </a>
+          <a
+            href="#contact"
+            className="hover:text-orange-500 transition-colors"
+          >
+            Contato
+          </a>
         </nav>
-        <button className="bg-orange-500 px-5 py-3 rounded-md font-semibold">
+
+        <a
+          href="https://wa.me/5518997405172"
+          target="_blank"
+          className="hidden sm:flex items-center gap-2 btn-primary"
+        >
+          <Phone size={18} />
           Falar Agora
-        </button>
+        </a>
       </div>
     </header>
   );
