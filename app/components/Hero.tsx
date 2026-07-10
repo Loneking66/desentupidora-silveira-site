@@ -1,57 +1,69 @@
 import Image from "next/image";
+import { ArrowRight, Phone } from "lucide-react";
 import StatsCard from "./StatsCard";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-slate-950 text-white min-h-[80vh]">
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-3xl -top-32 -left-32" />
-        <div className="absolute w-[400px] h-[400px] bg-orange-400/10 rounded-full blur-3xl bottom-0 right-0" />
+    <section
+      id="top"
+      className="relative min-h-[80vh] overflow-hidden bg-slate-950 text-white"
+    >
+      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <div className="absolute -left-32 -top-32 h-[500px] w-[500px] rounded-full bg-orange-500/10 blur-3xl" />
+        <div className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-orange-400/10 blur-3xl" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-16 px-6 py-24 md:grid-cols-2">
         <div>
-          <p className="text-orange-500 font-semibold mb-4">
-            PRESIDENTE PRUDENTE E REGIÃO
+          <p className="mb-4 font-semibold uppercase tracking-[0.2em] text-orange-500">
+            Presidente Prudente e região
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight max-w-3xl">
-            {" "}
+          <h1 className="max-w-3xl text-4xl font-black leading-tight tracking-tight md:text-6xl">
             Seu problema
             <span className="block text-orange-500">resolvido.</span>
             <span className="block">A qualquer hora.</span>
           </h1>
 
-          <p className="text-gray-300 mt-6 max-w-xl">
-            Desentupidora especializada com atendimento 24h. Equipe altamente
-            qualificada para resolver qualquer tipo de entupimento, com rapidez
-            e eficiência. Serviço garantido e preços justos.
+          <p className="mt-6 max-w-xl text-base leading-7 text-gray-300 md:text-lg">
+            Atendimento 24 horas para desentupimentos residenciais e comerciais,
+            com rapidez, transparência e visita sem custo.
           </p>
 
-          <div className="flex gap-4 mt-8">
-            <button className="bg-orange-500 px-5 py-3 rounded-md font-semibold">
-              Chamar Agora
-            </button>
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="https://wa.me/5518997405172"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary flex items-center justify-center gap-2"
+            >
+              <Phone size={18} aria-hidden="true" />
+              Chamar agora
+            </a>
 
-            <button className="bg-slate-800 px-5 py-3 rounded-md font-semibold">
-              Ver Serviços
-            </button>
+            <a
+              href="#services"
+              className="btn-secondary flex items-center justify-center gap-2"
+            >
+              Ver serviços
+              <ArrowRight size={18} aria-hidden="true" />
+            </a>
           </div>
         </div>
 
-        <div className="relative flex justify-center">
-          <div className="relative w-full max-w-lg aspect-[5/4] rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+        <div className="relative flex justify-center pb-24 md:pb-20">
+          <div className="relative aspect-[5/4] w-full max-w-lg overflow-hidden rounded-2xl border border-slate-800 shadow-2xl">
             <Image
               src="/images/hero/hero.jpg"
-              alt="Equipe da Desentupidora Silveira"
+              alt="Equipe da Desentupidora Silveira em atendimento"
               fill
               className="object-cover"
               priority
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
 
-          <div className="w-[65%] absolute -bottom-35 left-1/2 -translate-x-1/2">'
-            {" "}
+          <div className="absolute -bottom-4 left-1/2 w-[85%] -translate-x-1/2 md:-bottom-8 md:w-[70%]">
             <StatsCard />
           </div>
         </div>
