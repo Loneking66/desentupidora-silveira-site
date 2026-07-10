@@ -1,5 +1,6 @@
 import { Phone } from "lucide-react";
-import NavLink from "./NavLink";
+import NavLink from "../ui/NavLink";
+import Button from "../ui/Button";
 
 export default function Header() {
   return (
@@ -24,16 +25,10 @@ export default function Header() {
           <NavLink href="#contact">Contato</NavLink>
         </nav>
 
-        <a
-          href="https://wa.me/5518997405172"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-primary hidden items-center gap-2 sm:flex"
-          aria-label="Falar com a Desentupidora Silveira pelo WhatsApp"
-        >
-          <Phone size={18} aria-hidden="true" />
-          Falar Agora
-        </a>
+        <Button href="https://wa.me/5518997405172" external>
+          <Phone size={18} />
+          Chamar agora
+        </Button>
       </div>
     </header>
   );

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { ArrowRight, Phone } from "lucide-react";
-import StatsCard from "./StatsCard";
+import StatsCard from "../ui/StatsCard";
+import Button from "../ui/Button";
+import Container from "../ui/Container";
 
 export default function Hero() {
   return (
@@ -13,7 +15,7 @@ export default function Hero() {
         <div className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-orange-400/10 blur-3xl" />
       </div>
 
-      <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-16 px-6 py-24 md:grid-cols-2">
+      <Container className="relative z-10 mx-auto grid max-w-7xl items-center gap-16 px-6 py-24 md:grid-cols-2">
         <div>
           <p className="mb-4 font-semibold uppercase tracking-[0.2em] text-orange-500">
             Presidente Prudente e região
@@ -31,15 +33,10 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="https://wa.me/5518997405172"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary flex items-center justify-center gap-2"
-            >
-              <Phone size={18} aria-hidden="true" />
+            <Button href="https://wa.me/5518997405172" external>
+              <Phone size={18} />
               Chamar agora
-            </a>
+            </Button>
 
             <a
               href="#services"
@@ -67,7 +64,7 @@ export default function Hero() {
             <StatsCard />
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
