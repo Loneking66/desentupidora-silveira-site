@@ -8,8 +8,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Desentupidora Silveira",
-  description: "Desentupidora em Presidente Prudente e região.",
+  title: "Desentupidora Silveira | Atendimento 24h em Presidente Prudente",
+   description: "Desentupidora em Presidente Prudente e região. Atendimento 24 horas para desentupimentos residenciais e comerciais, com rapidez, transparência e visita sem custo.",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
+    <html lang="pt-BR" className="scroll-smooth" data-scroll-behavior="smooth">
       <body className={poppins.className}>{children}</body>
     </html>
   );

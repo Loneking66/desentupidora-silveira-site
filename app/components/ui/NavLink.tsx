@@ -1,29 +1,18 @@
-"use client";
+import type { ReactNode } from "react";
 
 type NavLinkProps = {
   href: string;
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
 };
 
 export default function NavLink({
   href,
   children,
-  className,
+  className = "",
 }: NavLinkProps) {
-  function handleClick(event: React.MouseEvent<HTMLAnchorElement>) {
-    event.preventDefault();
-
-    const target = document.querySelector(href);
-
-    target?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-  }
-
   return (
-    <a href={href} onClick={handleClick} className={className}>
+    <a href={href} className={className}>
       {children}
     </a>
   );

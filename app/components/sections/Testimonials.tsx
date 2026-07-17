@@ -1,17 +1,5 @@
-const testimonials = [
-  {
-    name: "Cliente Google",
-    text: "Atendimento rápido, serviço bem feito e preço justo. Recomendo!",
-  },
-  {
-    name: "Cliente Google",
-    text: "Chegaram rápido e resolveram o problema no mesmo dia.",
-  },
-  {
-    name: "Cliente Google",
-    text: "Profissionais educados, explicaram tudo e fizeram um ótimo serviço.",
-  },
-];
+import { testimonials } from "@/constants/testimonials";
+import TestimonialCard from "../ui/TestimonialCard";
 
 export default function Testimonials() {
   return (
@@ -42,22 +30,12 @@ export default function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.text}
-              className="bg-white p-8 border border-gray-200 rounded-lg"
-            >
-              <p className="text-orange-500 text-xl mb-4">★★★★★</p>
-
-              <p className="text-gray-600 mb-6">
-                &quot;{testimonial.text}&quot;
-              </p>
-
-              <h3 className="text-slate-900 font-bold">{testimonial.name}</h3>
-
-              <p className="text-gray-400 text-sm mt-1">
-                Avaliação verificada no Google
-              </p>
-            </div>
+            <TestimonialCard
+              key={testimonial.name}
+              name={testimonial.name}
+              rating={testimonial.rating}
+              testimonial={testimonial.text}
+            />
           ))}
         </div>
       </div>

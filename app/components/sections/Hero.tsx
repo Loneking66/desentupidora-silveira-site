@@ -51,7 +51,7 @@ export default function Hero() {
         <div className="relative flex justify-center pb-24 md:pb-20">
           <div className="relative aspect-[5/4] w-full max-w-lg overflow-hidden rounded-2xl border border-slate-800 shadow-2xl">
             <Image
-              src="/images/hero/hero.jpg"
+              src="/images/hero/hero1.png"
               alt="Equipe da Desentupidora Silveira em atendimento"
               fill
               className="object-cover"
@@ -60,7 +60,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute -bottom-4 left-1/2 w-[85%] -translate-x-1/2 md:-bottom-8 md:w-[70%]">
+          <div className="absolute -bottom-4 left-1/2 w-[65%] -translate-x-1/2 md:-bottom-18 md:w-[70%]">
             <StatsCard />
           </div>
         </div>

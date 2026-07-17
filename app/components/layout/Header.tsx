@@ -1,6 +1,7 @@
 import { Phone } from "lucide-react";
 import NavLink from "../ui/NavLink";
 import Button from "../ui/Button";
+import { navigation } from "@/constants/navigation";
 
 export default function Header() {
   return (
@@ -19,10 +20,11 @@ export default function Header() {
           className="hidden items-center gap-8 font-medium md:flex"
           aria-label="Navegação principal"
         >
-          <NavLink href="#services">Serviços</NavLink>
-          <NavLink href="#about">Sobre</NavLink>
-          <NavLink href="#testimonials">Avaliações</NavLink>
-          <NavLink href="#contact">Contato</NavLink>
+          {navigation.map((item) => (
+            <NavLink key={item.href} href={item.href}>
+              {item.label}
+            </NavLink>
+          ))}
         </nav>
 
         <Button href="https://wa.me/5518997405172" external>

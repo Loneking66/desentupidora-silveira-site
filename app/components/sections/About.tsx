@@ -7,9 +7,9 @@ export default function About() {
   return (
     <section id="about" className="bg-slate-950 text-white py-24">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative h-96 rounded-lg overflow-hidden">
+        <div className="relative h-[544px] rounded-lg overflow-hidden">
           <Image
-            src="/images/about/team.jpg"
+            src="/images/about/team3.png"
             alt="Equipe da Desentupidora Silveira trabalhando"
             fill
             className="object-cover"

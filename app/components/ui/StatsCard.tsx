@@ -30,21 +30,15 @@ export default function StatsCard() {
 
             <p className="text-2xl font-black text-white">{value}</p>
 
-            <p className="mt-1 text-xs leading-5 text-slate-400">
-              {label}
-            </p>
+            <p className="mt-1 text-xs leading-5 text-slate-400">{label}</p>
           </div>
         ))}
       </div>
 
       <div className="mt-6 border-t border-white/10 pt-5 text-center">
-        <p className="text-sm text-slate-400">
-          Presidente Prudente e região
-        </p>
+        <p className="text-sm text-slate-400">Presidente Prudente e região</p>
 
-        <p className="mt-1 font-semibold text-white">
-          Visita sem custo
-        </p>
+        <p className="mt-1 font-semibold text-white">Visita sem custo</p>
       </div>
     </div>
   );

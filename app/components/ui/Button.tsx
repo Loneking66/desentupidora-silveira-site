@@ -20,10 +20,8 @@ export default function Button({
     "inline-flex items-center justify-center gap-2 rounded-md px-6 py-3 font-semibold transition-all duration-300";
 
   const variants = {
-    primary:
-      "bg-orange-500 text-white hover:bg-orange-600 hover:scale-105",
-    secondary:
-      "bg-slate-800 text-white hover:bg-slate-700 hover:scale-105",
+    primary: "bg-orange-500 text-white hover:bg-orange-600 hover:scale-105",
+    secondary: "bg-slate-800 text-white hover:bg-slate-700 hover:scale-105",
   };
 
   const classes = `${baseClasses} ${variants[variant]} ${className}`;
