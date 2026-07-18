@@ -19,25 +19,16 @@ A custom website focused on:
 
 ## 🛠 Tech Stack
 
-### Frontend
-
-- Next.js 16 (App Router)
-- React
-- TypeScript
-- Tailwind CSS
-
-### UI
-
-- Lucide React
-- next/image
-- next/font (Poppins)
-
-### Development
-
-- Git & GitHub
-- Vercel
-- npm
-- ESLint
+| Technology | Purpose |
+|------------|---------|
+| Next.js 16 | React framework and static site generation |
+| React | Component-based UI |
+| TypeScript | Type safety |
+| Tailwind CSS | Utility-first styling |
+| Lucide React | Icons |
+| next/image | Image optimization |
+| Vercel | Deployment and hosting |
+| Git & GitHub | Version control |
 
 ## Features
 
