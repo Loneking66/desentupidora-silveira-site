@@ -17,9 +17,27 @@ A custom website focused on:
 - High conversion
 - Clean architecture
 
-## Tech Stack
+## 🛠 Tech Stack
 
-...
+### Frontend
+
+- Next.js 16 (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+
+### UI
+
+- Lucide React
+- next/image
+- next/font (Poppins)
+
+### Development
+
+- Git & GitHub
+- Vercel
+- npm
+- ESLint
 
 ## Features
 
