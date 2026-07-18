@@ -54,7 +54,7 @@ A custom website focused on:
 
 ### Contact
 
-![Contact](docs/screenshots/desktop-contact.png)
+![Contact](docs/screenshots/desktop-contacts.png)
 
 ## Local Setup
 
