@@ -38,9 +38,23 @@ A custom website focused on:
 
 ...
 
-## Screenshots
+## 📸 Screenshots
 
-...
+| Desktop | Mobile |
+|---------|--------|
+| ![Desktop](docs/screenshots/desktop-home.png) | ![Mobile](docs/screenshots/mobile-hero.png) |
+
+### Services
+
+![Services](docs/screenshots/services.png)
+
+### Testimonials
+
+![Testimonials](docs/screenshots/testimonials.png)
+
+### Contact
+
+![Contact](docs/screenshots/contact.png)
 
 ## Local Setup
 
