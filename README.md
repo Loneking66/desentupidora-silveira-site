@@ -46,15 +46,15 @@ A custom website focused on:
 
 ### Services
 
-![Services](docs/screenshots/services.png)
+![Services](docs/screenshots/desktop-services.png)
 
 ### Testimonials
 
-![Testimonials](docs/screenshots/testimonials.png)
+![Testimonials](docs/screenshots/desktop-testimonials.png)
 
 ### Contact
 
-![Contact](docs/screenshots/contact.png)
+![Contact](docs/screenshots/desktop-contact.png)
 
 ## Local Setup
 
