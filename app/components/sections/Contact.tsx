@@ -4,9 +4,10 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-6 text-center">
         <p className="text-orange-500 font-semibold mb-4">ENTRE EM CONTATO</p>
 
-        <h2 className="text-5xl font-black mb-6">
-          PRECISANDO DE UMA
-          <span className="text-orange-500"> SOLUÇÃO?</span>
+        <h2 className="mx-auto max-w-4xl text-center text-4xl font-black leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
+          PRECISANDO
+          <span className="block">DE UMA</span>
+          <span className="block text-orange-500">SOLUÇÃO?</span>
         </h2>
 
         <p className="text-gray-300 max-w-2xl mx-auto mb-10">

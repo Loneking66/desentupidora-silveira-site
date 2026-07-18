@@ -3,6 +3,7 @@ import { ArrowRight, Phone } from "lucide-react";
 import StatsCard from "../ui/StatsCard";
 import Button from "../ui/Button";
 import Container from "../ui/Container";
+import StatsOverlay from "../ui/StatsOverlay";
 
 export default function Hero() {
   return (
@@ -59,10 +60,12 @@ export default function Hero() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-
-          <div className="absolute -bottom-4 left-1/2 w-[65%] -translate-x-1/2 md:-bottom-18 md:w-[70%]">
-            <StatsCard />
-          </div>
+<div className="absolute inset-x-3 bottom-3 md:hidden">
+  <StatsOverlay />
+</div>
+          <div className="absolute -bottom-8 left-1/2 hidden w-[70%] -translate-x-1/2 md:block">
+  <StatsCard />
+</div>
         </div>
       </Container>
     </section>
